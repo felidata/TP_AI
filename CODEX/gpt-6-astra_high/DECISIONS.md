@@ -42,6 +42,10 @@ Compare static sideband density, robust multivariate dynamic scores, combined
 persistence/dynamic scores, and Isolation Forest plus feature ablations.
 
 Freeze candidate grid before test: training-score quantiles at 0..40% masking,
-tile sizes 32/64; select validation Pareto point with f_exp>=0.8 and maximum
-F_equal (ties favor exposure). The constraint is a declared working preference,
+tile sizes 32/64; select among multivariate robust dynamic/combined or Isolation
+Forest candidates with f_exp>=0.8 and maximum F_equal (ties favor exposure).
+Static sideband ranking and one-channel ablations are comparisons only, since a
+static occupancy cut alone is too close to the existing hot-zone approach to be
+the primary contribution. Display the global validation/test Pareto frontier even
+if a comparison dominates an eligible primary candidate. The constraint is a declared working preference,
 not universal experimental optimum. Always show all operating points and frontier.
