@@ -69,3 +69,15 @@ per quadrant. Fixed-mask gain+/-1% and thresholds0.6/0.8 leave r_B near0.214.
 Course-inspired verification is separate arithmetic/code paths in this same
 model's run; it is not claimed to be independent human or alternate-model review.
 Only a clean-cache repeat in the observed environment is tested, not a new OS.
+
+## Visual QA finding during clean reproduction
+
+The gain-versus-acquisition figure exposed a transient in all four S99 HDUs at
+image114: fitted gains174.57,170.27,180.51,179.44 ADU/e. Input ADU histograms for
+IDs113/114/115 show a shifted1e feature (e.g. HDU0 bin maxima218/178/206 ADU);
+this is not just a plot artifact. Its paired end timestamps differ by10seconds.
+No causal explanation is established. Fits pass the original declared checks;
+we retain the original sample and add a paired-acquisition exclusion diagnostic,
+not a revised main result. The first end-to-end repeat was still running when
+this diagnostic/report addition was made; the unchanged core numeric products
+are compared to the first-run reference.

@@ -47,6 +47,15 @@ def main():
     assert np.isclose((n1/e1)/(n0/e0),summary['background_ratio'])
     assert np.isclose((e1/e0)**2*n0/n1,summary['F_equal'])
 
+    # Retain the original sample; assess the whole paired acquisition with a gain transient.
+    without114=test & np.array([r['meta']['image_id']!=114 for r in records])
+    transient=dict(
+        observation='S99 image114 has shifted raw 1e peaks, fitted gains170-181 ADU/e, and a10-second longer readout than its paired module. Cause unknown; primary sample is unchanged.',
+        gains_adu_per_e={str(r['meta']['hdu']):r['meta']['gain_adu_per_e'] for r in records if r['meta']['module']=='S99' and r['meta']['image_id']==114},
+        paired_acquisition_exclusion=metrics(e[without114].sum(),(e*keep)[without114].sum(),n[without114].sum(),(n*keep)[without114].sum()),
+        interpretation='Post-test diagnostic only, not a new selection; removes both modules and all eight HDUs.')
+    (ROOT/'results/acquisition114_check.json').write_text(json.dumps(transient,indent=2)+'\n')
+
     # Persistent structure measured only within training: first/second half.
     for group in sorted({(r['meta']['module'],r['meta']['hdu']) for r in records}):
         rr=[r for r in records if (r['meta']['module'],r['meta']['hdu'])==group and r['meta']['split']=='train']

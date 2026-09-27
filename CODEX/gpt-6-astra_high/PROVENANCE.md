@@ -33,6 +33,7 @@ existing MOSKITA mask output or code is loaded by this project's execution.
 | results/ablations.csv | verify.main | sklearn Forest refit with omitted feature channels; same fixed 15% training-exposure quantile | Full-feature refit gives identical selected masks; improvements of smaller descriptors openly reported, no retuning |
 | results/reconstruction_checks.csv | verify.main -> calibrate, reconstruct on all test HDUs | Fixed mask, gain +/-1%, threshold0.6/0.8e; observational stress tests, not a systematic confidence band | Nominal re-reconstruction exactly returns final ROI counts |
 | results/verification.json | verify.main | Separate direct loops/analytic sums, ROI erasure, translated-mask control, 100000 weighted anchors | Explicit assertions; eight real HDUs checked for exact feature equality; reproducible seed |
+| results/acquisition114_check.json | verify.main, fixed primary masks and catalogs | Post-test QA diagnostic excluding the complete paired acquisition with anomalous S99 gains | Primary sample unchanged; raw electron peaks inspected against images113/115; unknown cause explicitly retained as limitation |
 | results/reproduction_check.json | src/check_reproduction.py, clean-entry workflow | Compare regenerated quantitative products and figure hashes; record runtime | Same FITS hashes, integer counts, float metrics and plots; excludes commit/runtime metadata from equality claim |
 
 ## Every report figure
