@@ -1,0 +1,586 @@
+Verified SHA-256 for 218 FITS files.
+test_components_independent (test_science.ScientificChecks.test_components_independent) ... ok
+test_exposure_closed_form (test_science.ScientificChecks.test_exposure_closed_form) ... ok
+test_metrics_not_counts (test_science.ScientificChecks.test_metrics_not_counts) ... ok
+test_roi_blind_feature_injection (test_science.ScientificChecks.test_roi_blind_feature_injection) ... ok
+test_threshold_and_frontier (test_science.ScientificChecks.test_threshold_and_frontier) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.086s
+
+OK
+1/174 S101 100: ROI=800
+2/174 S101 101: ROI=798
+3/174 S101 102: ROI=818
+4/174 S101 103: ROI=827
+5/174 S101 104: ROI=787
+6/174 S101 105: ROI=848
+7/174 S101 106: ROI=816
+8/174 S101 107: ROI=875
+9/174 S101 108: ROI=937
+10/174 S101 22: ROI=517
+11/174 S101 23: ROI=647
+12/174 S101 24: ROI=609
+13/174 S101 25: ROI=645
+14/174 S101 26: ROI=780
+15/174 S101 27: ROI=762
+16/174 S101 28: ROI=798
+17/174 S101 29: ROI=815
+18/174 S101 30: ROI=727
+19/174 S101 31: ROI=815
+20/174 S101 32: ROI=851
+21/174 S101 33: ROI=925
+22/174 S101 34: ROI=878
+23/174 S101 35: ROI=832
+24/174 S101 36: ROI=796
+25/174 S101 37: ROI=799
+26/174 S101 38: ROI=863
+27/174 S101 39: ROI=726
+28/174 S101 40: ROI=859
+29/174 S101 41: ROI=865
+30/174 S101 42: ROI=873
+31/174 S101 43: ROI=811
+32/174 S101 44: ROI=836
+33/174 S101 45: ROI=759
+34/174 S101 46: ROI=832
+35/174 S101 47: ROI=886
+36/174 S101 48: ROI=838
+37/174 S101 49: ROI=650
+38/174 S101 50: ROI=717
+39/174 S101 51: ROI=677
+40/174 S101 52: ROI=695
+41/174 S101 53: ROI=747
+42/174 S101 54: ROI=678
+43/174 S101 55: ROI=706
+44/174 S101 56: ROI=666
+45/174 S101 57: ROI=779
+46/174 S101 58: ROI=881
+47/174 S101 59: ROI=870
+48/174 S101 60: ROI=824
+49/174 S101 61: ROI=780
+50/174 S101 62: ROI=884
+51/174 S101 63: ROI=878
+52/174 S101 64: ROI=903
+53/174 S101 65: ROI=799
+54/174 S101 66: ROI=856
+55/174 S101 67: ROI=837
+56/174 S101 68: ROI=817
+57/174 S101 69: ROI=813
+58/174 S101 70: ROI=870
+59/174 S101 71: ROI=747
+60/174 S101 72: ROI=861
+61/174 S101 73: ROI=842
+62/174 S101 74: ROI=804
+63/174 S101 75: ROI=829
+64/174 S101 76: ROI=869
+65/174 S101 77: ROI=914
+66/174 S101 78: ROI=850
+67/174 S101 79: ROI=794
+68/174 S101 80: ROI=873
+69/174 S101 81: ROI=914
+70/174 S101 82: ROI=908
+71/174 S101 83: ROI=833
+72/174 S101 84: ROI=856
+73/174 S101 85: ROI=688
+74/174 S101 86: ROI=447
+75/174 S101 87: ROI=461
+76/174 S101 88: ROI=426
+77/174 S101 89: ROI=472
+78/174 S101 90: ROI=601
+79/174 S101 91: ROI=890
+80/174 S101 92: ROI=853
+81/174 S101 93: ROI=901
+82/174 S101 94: ROI=905
+83/174 S101 95: ROI=872
+84/174 S101 96: ROI=840
+85/174 S101 97: ROI=753
+86/174 S101 98: ROI=771
+87/174 S101 99: ROI=817
+88/174 S99 100: ROI=111
+89/174 S99 101: ROI=126
+90/174 S99 102: ROI=115
+91/174 S99 103: ROI=152
+92/174 S99 104: ROI=136
+93/174 S99 105: ROI=132
+94/174 S99 106: ROI=146
+95/174 S99 107: ROI=142
+96/174 S99 108: ROI=133
+97/174 S99 22: ROI=203
+98/174 S99 23: ROI=134
+99/174 S99 24: ROI=127
+100/174 S99 25: ROI=100
+101/174 S99 26: ROI=132
+102/174 S99 27: ROI=117
+103/174 S99 28: ROI=119
+104/174 S99 29: ROI=120
+105/174 S99 30: ROI=102
+106/174 S99 31: ROI=118
+107/174 S99 32: ROI=132
+108/174 S99 33: ROI=79
+109/174 S99 34: ROI=102
+110/174 S99 35: ROI=143
+111/174 S99 36: ROI=77
+112/174 S99 37: ROI=136
+113/174 S99 38: ROI=110
+114/174 S99 39: ROI=106
+115/174 S99 40: ROI=97
+116/174 S99 41: ROI=95
+117/174 S99 42: ROI=133
+118/174 S99 43: ROI=105
+119/174 S99 44: ROI=112
+120/174 S99 45: ROI=118
+121/174 S99 46: ROI=123
+122/174 S99 47: ROI=133
+123/174 S99 48: ROI=112
+124/174 S99 49: ROI=118
+125/174 S99 50: ROI=113
+126/174 S99 51: ROI=116
+127/174 S99 52: ROI=109
+128/174 S99 53: ROI=112
+129/174 S99 54: ROI=133
+130/174 S99 55: ROI=167
+131/174 S99 56: ROI=141
+132/174 S99 57: ROI=139
+133/174 S99 58: ROI=138
+134/174 S99 59: ROI=124
+135/174 S99 60: ROI=91
+136/174 S99 61: ROI=115
+137/174 S99 62: ROI=128
+138/174 S99 63: ROI=96
+139/174 S99 64: ROI=125
+140/174 S99 65: ROI=154
+141/174 S99 66: ROI=153
+142/174 S99 67: ROI=156
+143/174 S99 68: ROI=150
+144/174 S99 69: ROI=117
+145/174 S99 70: ROI=140
+146/174 S99 71: ROI=112
+147/174 S99 72: ROI=159
+148/174 S99 73: ROI=132
+149/174 S99 74: ROI=149
+150/174 S99 75: ROI=102
+151/174 S99 76: ROI=163
+152/174 S99 77: ROI=153
+153/174 S99 78: ROI=152
+154/174 S99 79: ROI=153
+155/174 S99 80: ROI=125
+156/174 S99 81: ROI=148
+157/174 S99 82: ROI=152
+158/174 S99 83: ROI=147
+159/174 S99 84: ROI=115
+160/174 S99 85: ROI=117
+161/174 S99 86: ROI=111
+162/174 S99 87: ROI=109
+163/174 S99 88: ROI=138
+164/174 S99 89: ROI=134
+165/174 S99 90: ROI=129
+166/174 S99 91: ROI=101
+167/174 S99 92: ROI=126
+168/174 S99 93: ROI=123
+169/174 S99 94: ROI=158
+170/174 S99 95: ROI=163
+171/174 S99 96: ROI=112
+172/174 S99 97: ROI=142
+173/174 S99 98: ROI=136
+174/174 S99 99: ROI=133
+{'files': 174, 'hdus': 696, 'exposure_pixel_days': 108238914.7279493, 'roi_events': 79875, 'roi_rate_per_million_pixel_days': 737.950858069485}
+Fitting tile 32
+Fitting tile 64
+SELECTED {
+  "method": "isolation_forest",
+  "tile_size": 32,
+  "training_removed_target": 0.15,
+  "threshold": 0.5133267106012511,
+  "split": "validation",
+  "baseline_exposure": 27370854.900180377,
+  "retained_exposure": 22662165.90556367,
+  "exposure_fraction": 0.8279670469998481,
+  "baseline_roi_events": 19965,
+  "final_roi_events": 3997,
+  "baseline_roi_background_rate": 0.0007294255175006766,
+  "final_roi_background_rate": 0.00017637325649525482,
+  "background_ratio": 0.2417974861910301,
+  "F_equal": 3.424216934768791,
+  "sensitivity_proxy": 1.8504639782413468,
+  "pareto": true,
+  "config_sha256": "5aefd6e1fd343e94fc53e0ecaddcd3ce422961053acf19ffe6aba5078ba3e13b",
+  "selection_rule": "max validation F_equal among independent multivariate candidates with f_exp >= 0.8; static/one-channel methods are comparisons only",
+  "fit_commit": "f6640e81f8e8f7cc4482d891a1d813c55364a476"
+}
+1/218 S101 100: ROI=800
+2/218 S101 101: ROI=798
+3/218 S101 102: ROI=818
+4/218 S101 103: ROI=827
+5/218 S101 104: ROI=787
+6/218 S101 105: ROI=848
+7/218 S101 106: ROI=816
+8/218 S101 107: ROI=875
+9/218 S101 108: ROI=937
+10/218 S101 109: ROI=826
+11/218 S101 110: ROI=877
+12/218 S101 111: ROI=862
+13/218 S101 112: ROI=953
+14/218 S101 113: ROI=901
+15/218 S101 114: ROI=874
+16/218 S101 115: ROI=910
+17/218 S101 116: ROI=882
+18/218 S101 117: ROI=894
+19/218 S101 118: ROI=896
+20/218 S101 119: ROI=947
+21/218 S101 120: ROI=848
+22/218 S101 121: ROI=843
+23/218 S101 122: ROI=864
+24/218 S101 123: ROI=863
+25/218 S101 124: ROI=819
+26/218 S101 125: ROI=838
+27/218 S101 126: ROI=856
+28/218 S101 127: ROI=849
+29/218 S101 128: ROI=874
+30/218 S101 129: ROI=957
+31/218 S101 130: ROI=856
+32/218 S101 22: ROI=517
+33/218 S101 23: ROI=647
+34/218 S101 24: ROI=609
+35/218 S101 25: ROI=645
+36/218 S101 26: ROI=780
+37/218 S101 27: ROI=762
+38/218 S101 28: ROI=798
+39/218 S101 29: ROI=815
+40/218 S101 30: ROI=727
+41/218 S101 31: ROI=815
+42/218 S101 32: ROI=851
+43/218 S101 33: ROI=925
+44/218 S101 34: ROI=878
+45/218 S101 35: ROI=832
+46/218 S101 36: ROI=796
+47/218 S101 37: ROI=799
+48/218 S101 38: ROI=863
+49/218 S101 39: ROI=726
+50/218 S101 40: ROI=859
+51/218 S101 41: ROI=865
+52/218 S101 42: ROI=873
+53/218 S101 43: ROI=811
+54/218 S101 44: ROI=836
+55/218 S101 45: ROI=759
+56/218 S101 46: ROI=832
+57/218 S101 47: ROI=886
+58/218 S101 48: ROI=838
+59/218 S101 49: ROI=650
+60/218 S101 50: ROI=717
+61/218 S101 51: ROI=677
+62/218 S101 52: ROI=695
+63/218 S101 53: ROI=747
+64/218 S101 54: ROI=678
+65/218 S101 55: ROI=706
+66/218 S101 56: ROI=666
+67/218 S101 57: ROI=779
+68/218 S101 58: ROI=881
+69/218 S101 59: ROI=870
+70/218 S101 60: ROI=824
+71/218 S101 61: ROI=780
+72/218 S101 62: ROI=884
+73/218 S101 63: ROI=878
+74/218 S101 64: ROI=903
+75/218 S101 65: ROI=799
+76/218 S101 66: ROI=856
+77/218 S101 67: ROI=837
+78/218 S101 68: ROI=817
+79/218 S101 69: ROI=813
+80/218 S101 70: ROI=870
+81/218 S101 71: ROI=747
+82/218 S101 72: ROI=861
+83/218 S101 73: ROI=842
+84/218 S101 74: ROI=804
+85/218 S101 75: ROI=829
+86/218 S101 76: ROI=869
+87/218 S101 77: ROI=914
+88/218 S101 78: ROI=850
+89/218 S101 79: ROI=794
+90/218 S101 80: ROI=873
+91/218 S101 81: ROI=914
+92/218 S101 82: ROI=908
+93/218 S101 83: ROI=833
+94/218 S101 84: ROI=856
+95/218 S101 85: ROI=688
+96/218 S101 86: ROI=447
+97/218 S101 87: ROI=461
+98/218 S101 88: ROI=426
+99/218 S101 89: ROI=472
+100/218 S101 90: ROI=601
+101/218 S101 91: ROI=890
+102/218 S101 92: ROI=853
+103/218 S101 93: ROI=901
+104/218 S101 94: ROI=905
+105/218 S101 95: ROI=872
+106/218 S101 96: ROI=840
+107/218 S101 97: ROI=753
+108/218 S101 98: ROI=771
+109/218 S101 99: ROI=817
+110/218 S99 100: ROI=111
+111/218 S99 101: ROI=126
+112/218 S99 102: ROI=115
+113/218 S99 103: ROI=152
+114/218 S99 104: ROI=136
+115/218 S99 105: ROI=132
+116/218 S99 106: ROI=146
+117/218 S99 107: ROI=142
+118/218 S99 108: ROI=133
+119/218 S99 109: ROI=115
+120/218 S99 110: ROI=168
+121/218 S99 111: ROI=132
+122/218 S99 112: ROI=117
+123/218 S99 113: ROI=138
+124/218 S99 114: ROI=161
+125/218 S99 115: ROI=164
+126/218 S99 116: ROI=150
+127/218 S99 117: ROI=139
+128/218 S99 118: ROI=120
+129/218 S99 119: ROI=137
+130/218 S99 120: ROI=123
+131/218 S99 121: ROI=113
+132/218 S99 122: ROI=145
+133/218 S99 123: ROI=113
+134/218 S99 124: ROI=122
+135/218 S99 125: ROI=117
+136/218 S99 126: ROI=154
+137/218 S99 127: ROI=127
+138/218 S99 128: ROI=139
+139/218 S99 129: ROI=135
+140/218 S99 130: ROI=119
+141/218 S99 22: ROI=203
+142/218 S99 23: ROI=134
+143/218 S99 24: ROI=127
+144/218 S99 25: ROI=100
+145/218 S99 26: ROI=132
+146/218 S99 27: ROI=117
+147/218 S99 28: ROI=119
+148/218 S99 29: ROI=120
+149/218 S99 30: ROI=102
+150/218 S99 31: ROI=118
+151/218 S99 32: ROI=132
+152/218 S99 33: ROI=79
+153/218 S99 34: ROI=102
+154/218 S99 35: ROI=143
+155/218 S99 36: ROI=77
+156/218 S99 37: ROI=136
+157/218 S99 38: ROI=110
+158/218 S99 39: ROI=106
+159/218 S99 40: ROI=97
+160/218 S99 41: ROI=95
+161/218 S99 42: ROI=133
+162/218 S99 43: ROI=105
+163/218 S99 44: ROI=112
+164/218 S99 45: ROI=118
+165/218 S99 46: ROI=123
+166/218 S99 47: ROI=133
+167/218 S99 48: ROI=112
+168/218 S99 49: ROI=118
+169/218 S99 50: ROI=113
+170/218 S99 51: ROI=116
+171/218 S99 52: ROI=109
+172/218 S99 53: ROI=112
+173/218 S99 54: ROI=133
+174/218 S99 55: ROI=167
+175/218 S99 56: ROI=141
+176/218 S99 57: ROI=139
+177/218 S99 58: ROI=138
+178/218 S99 59: ROI=124
+179/218 S99 60: ROI=91
+180/218 S99 61: ROI=115
+181/218 S99 62: ROI=128
+182/218 S99 63: ROI=96
+183/218 S99 64: ROI=125
+184/218 S99 65: ROI=154
+185/218 S99 66: ROI=153
+186/218 S99 67: ROI=156
+187/218 S99 68: ROI=150
+188/218 S99 69: ROI=117
+189/218 S99 70: ROI=140
+190/218 S99 71: ROI=112
+191/218 S99 72: ROI=159
+192/218 S99 73: ROI=132
+193/218 S99 74: ROI=149
+194/218 S99 75: ROI=102
+195/218 S99 76: ROI=163
+196/218 S99 77: ROI=153
+197/218 S99 78: ROI=152
+198/218 S99 79: ROI=153
+199/218 S99 80: ROI=125
+200/218 S99 81: ROI=148
+201/218 S99 82: ROI=152
+202/218 S99 83: ROI=147
+203/218 S99 84: ROI=115
+204/218 S99 85: ROI=117
+205/218 S99 86: ROI=111
+206/218 S99 87: ROI=109
+207/218 S99 88: ROI=138
+208/218 S99 89: ROI=134
+209/218 S99 90: ROI=129
+210/218 S99 91: ROI=101
+211/218 S99 92: ROI=126
+212/218 S99 93: ROI=123
+213/218 S99 94: ROI=158
+214/218 S99 95: ROI=163
+215/218 S99 96: ROI=112
+216/218 S99 97: ROI=142
+217/218 S99 98: ROI=136
+218/218 S99 99: ROI=133
+{'files': 218, 'hdus': 872, 'exposure_pixel_days': 135609986.79394042, 'roi_events': 102112, 'roi_rate_per_million_pixel_days': 752.9828917036865}
+Fitting tile 32
+Fitting tile 64
+TEST {
+  "schema_version": "1.0",
+  "agent": "CODEX",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "method_name": "isolation_forest",
+  "split_strategy": {
+    "group": "paired module image_id, all HDUs",
+    "train": [
+      22,
+      86
+    ],
+    "validation": [
+      87,
+      108
+    ],
+    "test": [
+      109,
+      130
+    ],
+    "chronological": true
+  },
+  "evaluation_split": "test",
+  "exposure_unit": "pixel day",
+  "background_rate_unit": "events / pixel day",
+  "roi_definition": "8-connected pixels >0.7e; summed continuous charge in [3.5,7.5); maximum-charge-pixel anchor",
+  "tile_size": 32,
+  "training_removed_target": 0.15,
+  "baseline_exposure": 27371072.06599112,
+  "retained_exposure": 22419102.584160406,
+  "exposure_fraction": 0.8190801781570115,
+  "baseline_roi_events": 22237,
+  "final_roi_events": 3903,
+  "baseline_roi_background_rate": 0.0008124270743355258,
+  "final_roi_background_rate": 0.0001740926063096547,
+  "background_ratio": 0.21428705641308535,
+  "F_equal": 3.8223502243553837,
+  "sensitivity_proxy": 1.9550831758151324,
+  "selected_hyperparameters": {
+    "method": "isolation_forest",
+    "tile_size": 32,
+    "training_removed_target": 0.15,
+    "threshold": 0.5133267106012511
+  },
+  "bootstrap_95_intervals": {
+    "exposure_fraction": [
+      0.8092143246572581,
+      0.8258093542026642
+    ],
+    "background_ratio": [
+      0.20876746880549998,
+      0.22051481899088604
+    ],
+    "F_equal": [
+      3.7078949647340993,
+      3.9288854285036523
+    ]
+  },
+  "random_seed": 20260927,
+  "runtime_seconds": 21.80775597599859,
+  "git_commit": "152110c9c5bc44927c2d46381c43097650e6adbd",
+  "physical_exposure_kg_days": null,
+  "notes": [
+    "Physical mass not verified for these modules: no kg-day conversion.",
+    "Exposure assumes uniform readout clock and zero integration before readout.",
+    "Masks accept pre-reconstructed events by maximum-charge anchor, no reclustering.",
+    "sqrt(F_equal) is a conditional background-dominated uniform-signal counting proxy, not a limit.",
+    "Bootstrap describes acquisition fluctuations conditional on fitted method, not calibration/systematic uncertainty.",
+    "git_commit is the code commit used to produce results, not the later artifact commit."
+  ]
+}
+Ablation full
+Ablation no_persistence
+Ablation no_high_charge
+Ablation no_negative_tail
+Ablation no_neighbor
+Reconstruction checks S101 110
+Reconstruction checks S101 115
+Reconstruction checks S101 120
+Reconstruction checks S101 125
+Reconstruction checks S101 130
+Reconstruction checks S99 110
+Reconstruction checks S99 115
+Reconstruction checks S99 120
+Reconstruction checks S99 125
+Reconstruction checks S99 130
+{
+  "independent_exposure_relative_difference": 3.3306690738754696e-15,
+  "independent_roi_counts": [
+    22237,
+    3903
+  ],
+  "real_roi_erasure": [
+    {
+      "module": "S101",
+      "hdu": 0,
+      "erased_roi_events": 737,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 1,
+      "erased_roi_events": 14,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 2,
+      "erased_roi_events": 12,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 3,
+      "erased_roi_events": 63,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 0,
+      "erased_roi_events": 15,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 1,
+      "erased_roi_events": 46,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 2,
+      "erased_roi_events": 35,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 3,
+      "erased_roi_events": 19,
+      "identical_features": true
+    }
+  ],
+  "shifted_mask_background_ratio_95": [
+    0.7609716162385767,
+    0.8395833061127889,
+    0.9217417563816119
+  ],
+  "injected_uniform_point_acceptance": 0.81772,
+  "injection_binomial_se": 0.0012173242785194494,
+  "synthetic_injection_note": "100000 signal anchors drawn proportional to readout exposure; signal reconstruction efficiency is not inferred.",
+  "checks_passed": true,
+  "runtime_seconds": 69.63474083300025,
+  "limitations": "Independent arithmetic/code paths, same model/agent. No independent scientist or alternate-model review."
+}
+Generated 7 figures, standalone report.html, 8-page report.pdf and figure sidecars.
+Artifact checks passed: metric identities, 378 operating points, counts, 7 embedded figures, displayed values.

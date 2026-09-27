@@ -1,0 +1,68 @@
+{
+  "independent_exposure_relative_difference": 3.3306690738754696e-15,
+  "independent_roi_counts": [
+    22237,
+    3903
+  ],
+  "real_roi_erasure": [
+    {
+      "module": "S101",
+      "hdu": 0,
+      "erased_roi_events": 737,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 1,
+      "erased_roi_events": 14,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 2,
+      "erased_roi_events": 12,
+      "identical_features": true
+    },
+    {
+      "module": "S101",
+      "hdu": 3,
+      "erased_roi_events": 63,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 0,
+      "erased_roi_events": 15,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 1,
+      "erased_roi_events": 46,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 2,
+      "erased_roi_events": 35,
+      "identical_features": true
+    },
+    {
+      "module": "S99",
+      "hdu": 3,
+      "erased_roi_events": 19,
+      "identical_features": true
+    }
+  ],
+  "shifted_mask_background_ratio_95": [
+    0.7609716162385767,
+    0.8395833061127889,
+    0.9217417563816119
+  ],
+  "injected_uniform_point_acceptance": 0.81772,
+  "injection_binomial_se": 0.0012173242785194494,
+  "synthetic_injection_note": "100000 signal anchors drawn proportional to readout exposure; signal reconstruction efficiency is not inferred.",
+  "checks_passed": true,
+  "runtime_seconds": 69.63474083300025,
+  "limitations": "Independent arithmetic/code paths, same model/agent. No independent scientist or alternate-model review."
+}

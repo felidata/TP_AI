@@ -81,3 +81,17 @@ we retain the original sample and add a paired-acquisition exclusion diagnostic,
 not a revised main result. The first end-to-end repeat was still running when
 this diagnostic/report addition was made; the unchanged core numeric products
 are compared to the first-run reference.
+
+## Final reproduction and presentation QA
+
+Moved the first-run cache outside the repository; ran reproduce.sh with no
+analysis cache. Input hashes verified; all5 unit checks and all artifact checks
+passed. Fifteen numerical/table/manifest/figure-hash products reproduced exactly,
+excluding naturally changing runtime and git metadata. Record:
+results/reproduction_check.json; complete run log: results/reproduction.log.
+This is the same installed environment, not a fresh package installation.
+
+Viewed all8 rendered PDF pages, representative PNGs and the HTML in Firefox.
+The initial headless Firefox profile under /tmp was inaccessible to the Snap
+package; a disposable ignored cache profile resolved the preview issue. No
+scientific result depended on the browser. Report PNGs reproduced byte-identically.

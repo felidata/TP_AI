@@ -17,5 +17,5 @@
   "pareto": true,
   "config_sha256": "5aefd6e1fd343e94fc53e0ecaddcd3ce422961053acf19ffe6aba5078ba3e13b",
   "selection_rule": "max validation F_equal among independent multivariate candidates with f_exp >= 0.8; static/one-channel methods are comparisons only",
-  "fit_commit": "234ba45d165cb3664603caad6611db24ff8c5fca"
+  "fit_commit": "f6640e81f8e8f7cc4482d891a1d813c55364a476"
 }

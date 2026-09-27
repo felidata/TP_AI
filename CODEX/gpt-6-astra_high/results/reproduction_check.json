@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "mismatches": [],
+  "compared_products": [
+    "summary.json",
+    "selection.json",
+    "verification.json",
+    "operating_points.csv",
+    "development_operating_points.csv",
+    "per_hdu.csv",
+    "test_acquisitions.csv",
+    "ablations.csv",
+    "reconstruction_checks.csv",
+    "persistence.csv",
+    "per_group.csv",
+    "temporal.csv",
+    "spectrum.csv",
+    "report_assets.json",
+    "manifest.json"
+  ],
+  "numerical_json_exact_equal": true,
+  "csv_manifest_and_figure_hashes_byte_equal": true,
+  "elapsed_seconds_since_snapshot": 389.9466166496277,
+  "code_commit": "152110c9c5bc44927c2d46381c43097650e6adbd",
+  "workflow": "SKIPPER_DATA_DIR=../pp_proc bash CODEX/gpt-6-astra_high/reproduce.sh",
+  "scope": "Empty analysis cache, same existing Python environment; input SHA-256 checked. Runtime/git metadata excluded. Not a new-machine/environment install test."
+}

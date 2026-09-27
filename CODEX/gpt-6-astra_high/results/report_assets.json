@@ -1,0 +1,9 @@
+{
+  "figures/tradeoff.png": "836d32498e23ab48804bd663c30963c7c9ecfde5e60bba107b21b8fd66ee6599",
+  "figures/spectra.png": "455dc8c3afda999a064d85d91ec1de0e4cae4d12bad8bdb8f32ac1e723a8cadc",
+  "figures/calibration.png": "178cf182cd4d80af767da68f2c52f7cfb5de93bce2779dc391b66114757e8ba8",
+  "figures/representative.png": "928769eb507a11429a3b4fbad56fa5874a45f8a6674c4f45369948e4fa697361",
+  "figures/spatial.png": "6021c610cae09702aa53dca0423a428f90350016ab8ac211162b92c9657853ec",
+  "figures/temporal.png": "3c97da1fac70e61cf56e825f5ebdacf50d207ca6c7fdb528d65bd0680d93b403",
+  "figures/ablations.png": "9e17c4b56ee9201b29528f9a80130aa46c85d0bb0988592cf75d5375ddff41af"
+}

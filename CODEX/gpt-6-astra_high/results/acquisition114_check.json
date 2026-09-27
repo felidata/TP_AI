@@ -1,0 +1,22 @@
+{
+  "observation": "S99 image114 has shifted raw 1e peaks, fitted gains170-181 ADU/e, and a10-second longer readout than its paired module. Cause unknown; primary sample is unchanged.",
+  "gains_adu_per_e": {
+    "0": 174.56692434028423,
+    "1": 170.26585052882984,
+    "2": 180.5098618751148,
+    "3": 179.4399666502451
+  },
+  "paired_acquisition_exclusion": {
+    "baseline_exposure": 26126567.193218905,
+    "retained_exposure": 21503988.33405221,
+    "exposure_fraction": 0.8230697961588127,
+    "baseline_roi_events": 21202,
+    "final_roi_events": 3748,
+    "baseline_roi_background_rate": 0.0008115111274742185,
+    "final_roi_background_rate": 0.00017429324931621777,
+    "background_ratio": 0.21477616685145828,
+    "F_equal": 3.832221275873954,
+    "sensitivity_proxy": 1.9576060062928786
+  },
+  "interpretation": "Post-test diagnostic only, not a new selection; removes both modules and all eight HDUs."
+}
