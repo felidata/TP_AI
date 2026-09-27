@@ -1,0 +1,8 @@
+{
+  "agent": "CODEX",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "evidence": "Matching session turn_context model and effort; local config agrees. Backend snapshot/version beyond runtime model identifier unavailable.",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42"
+}

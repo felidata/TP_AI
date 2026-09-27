@@ -1,0 +1,22 @@
+{
+  "seed": 20260927,
+  "train_max_image": 86,
+  "validation_max_image": 108,
+  "expected_images": [22, 130],
+  "active_rows": [0, 512],
+  "active_columns": [8, 3080],
+  "overscan_start": 3100,
+  "pixel_threshold_e": 0.7,
+  "roi_e": [3.5, 7.5],
+  "sideband_e": [0.7, 2.5],
+  "high_charge_e": 20.0,
+  "negative_tail_e": -0.7,
+  "base_tile": 16,
+  "tile_sizes": [32, 64],
+  "removed_training_fractions": [0, 0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4],
+  "minimum_validation_exposure": 0.8,
+  "bootstrap_replicates": 2000,
+  "bootstrap_block_acquisitions": 4,
+  "isolation_trees": 100,
+  "isolation_max_samples": 256
+}

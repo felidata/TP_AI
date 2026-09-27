@@ -1,0 +1,12 @@
+*.fits
+*.fits.gz
+*.fits.fz
+*.fit
+*.fts
+*.zip
+*.tar*
+__pycache__/
+.pytest_cache/
+.venv/
+CODEX/**/cache/
+CODEX/**/data/downloads/
