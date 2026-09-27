@@ -1,0 +1,21 @@
+{
+  "method": "isolation_forest",
+  "tile_size": 32,
+  "training_removed_target": 0.15,
+  "threshold": 0.5133267106012511,
+  "split": "validation",
+  "baseline_exposure": 27370854.900180377,
+  "retained_exposure": 22662165.90556367,
+  "exposure_fraction": 0.8279670469998481,
+  "baseline_roi_events": 19965,
+  "final_roi_events": 3997,
+  "baseline_roi_background_rate": 0.0007294255175006766,
+  "final_roi_background_rate": 0.00017637325649525482,
+  "background_ratio": 0.2417974861910301,
+  "F_equal": 3.424216934768791,
+  "sensitivity_proxy": 1.8504639782413468,
+  "pareto": true,
+  "config_sha256": "5aefd6e1fd343e94fc53e0ecaddcd3ce422961053acf19ffe6aba5078ba3e13b",
+  "selection_rule": "max validation F_equal among independent multivariate candidates with f_exp >= 0.8; static/one-channel methods are comparisons only",
+  "fit_commit": "234ba45d165cb3664603caad6611db24ff8c5fca"
+}
