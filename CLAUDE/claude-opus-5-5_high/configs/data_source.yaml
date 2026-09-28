@@ -1,0 +1,5 @@
+# Public copy of the pp_proc dataset (218 FITS files, ~5.4 GB).
+# No link has been published yet: replace the placeholder when it exists.
+gdrive_folder_url: "PLACEHOLDER_GOOGLE_DRIVE_FOLDER_URL"
+expected_n_files: 218
+manifest: data/manifest.csv

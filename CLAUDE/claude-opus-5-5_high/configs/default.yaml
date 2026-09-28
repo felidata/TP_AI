@@ -1,0 +1,41 @@
+# Default configuration for the CLAUDE/claude-opus-5-5_high analysis.
+# All paths are relative to this run directory unless absolute.
+# The data directory can always be overridden with SKIPPER_DATA_DIR.
+
+data:
+  data_dir: ../../../pp_proc          # used only if SKIPPER_DATA_DIR is unset
+  file_glob: "pp_proc_skp_mod*_img*.fits"
+  cache_dir: cache                    # derived per-image products (gitignored)
+
+geometry:
+  # Stored-array slices of one quadrant (HDU); see DATA.md.
+  active_rows: [0, 512]               # rows 512..514 are vertical overscan
+  active_cols: [8, 3080]              # 0..7 prescan, 3080..3199 overscan
+  baseline_cols: [3100, 3200]         # reverse overscan, used for row pedestal
+  pixel_mass_g: 3.5374e-7             # 15x15 um^2 x 675 um x 2.329 g/cm^3 (assumed geometry)
+
+calibration:
+  hist_min_adu: -200.0
+  hist_max_adu: 900.0
+  hist_bin_adu: 4.0
+  n_peaks: 4                          # 0,1,2,3 e- Gaussian peaks, common sigma, linear gain
+  gain_guess_adu: 210.0
+  sigma_guess_adu: 36.0
+  rounding_offset: 0.5                # integer charge n = floor(q + 0.5), q in e-
+
+events:
+  connectivity: 8                     # 8-connected clusters of pixels with n >= 1
+  roi_min_e: 4                        # ROI: 4 <= Q_cluster <= 7 (integer total charge)
+  roi_max_e: 7
+  hee_min_e: 100                      # "high-energy deposit" for context features only
+
+split:
+  # Complete acquisitions (both modules, all four HDUs of an image number) are
+  # the unit of splitting. The final test block is never used for tuning.
+  test_first_img: 98                  # acquisitions 98..130 -> final held-out test
+  n_cv_folds: 4                       # contiguous blocks of the development set (img 22..97)
+
+seed: 20260927
+
+quality:
+  max_gain_dev: 0.05                  # drop a file if any HDU gain deviates >5% from its module/HDU median

@@ -1,0 +1,134 @@
+{
+ "n_fits_files": 218,
+ "n_usable_files": 217,
+ "unusable_files": [
+  "pp_proc_skp_modS99_Vv3_bkgd_CLEAR60_NSAMP256_NROW515_NCOL3200_EXPOSURE0_NBINROW1_NBINCOL1_img114.fits"
+ ],
+ "unusable_reason": "calibration quality cut: fitted gain deviates >5% from module/HDU median in all HDUs (S99 img114: gain ~180 vs ~214 ADU/e-, noise 0.20-0.21 e-)",
+ "hdus_per_file": 4,
+ "modules": [
+  "S101",
+  "S99"
+ ],
+ "acquisitions": [
+  22,
+  130
+ ],
+ "active_region_per_hdu": [
+  512,
+  3072
+ ],
+ "readout_hours_median": 4.774166666666667,
+ "calibration_by_quadrant": [
+  {
+   "module": "S101",
+   "hdu": 0,
+   "gain_adu": 209.88528,
+   "noise_e": 0.1822,
+   "chi2_ndf": 1.63294,
+   "see_a1a0": 0.01941
+  },
+  {
+   "module": "S101",
+   "hdu": 1,
+   "gain_adu": 206.45649,
+   "noise_e": 0.18088,
+   "chi2_ndf": 1.99972,
+   "see_a1a0": 0.00405
+  },
+  {
+   "module": "S101",
+   "hdu": 2,
+   "gain_adu": 218.82224,
+   "noise_e": 0.17146,
+   "chi2_ndf": 1.79652,
+   "see_a1a0": 0.00208
+  },
+  {
+   "module": "S101",
+   "hdu": 3,
+   "gain_adu": 209.12314,
+   "noise_e": 0.1781,
+   "chi2_ndf": 1.74248,
+   "see_a1a0": 0.00179
+  },
+  {
+   "module": "S99",
+   "hdu": 0,
+   "gain_adu": 214.18155,
+   "noise_e": 0.17254,
+   "chi2_ndf": 1.15727,
+   "see_a1a0": 0.00564
+  },
+  {
+   "module": "S99",
+   "hdu": 1,
+   "gain_adu": 208.20823,
+   "noise_e": 0.17221,
+   "chi2_ndf": 1.25964,
+   "see_a1a0": 0.00778
+  },
+  {
+   "module": "S99",
+   "hdu": 2,
+   "gain_adu": 218.1376,
+   "noise_e": 0.16697,
+   "chi2_ndf": 1.11268,
+   "see_a1a0": 0.00205
+  },
+  {
+   "module": "S99",
+   "hdu": 3,
+   "gain_adu": 216.85861,
+   "noise_e": 0.16671,
+   "chi2_ndf": 1.02984,
+   "see_a1a0": 0.00182
+  }
+ ],
+ "roi_definition": "8-connected cluster of pixels with integer charge n>=1 (n=floor(q+0.5)); 4<=sum(n)<=7",
+ "roi_cluster_size_distribution": {
+  "1": 2488,
+  "2": 12992,
+  "3": 27886,
+  "4": 35861,
+  "5": 17379,
+  "6": 7880,
+  "7": 2625
+ },
+ "totals": {
+  "dev": {
+   "n_quadrant_images": 608.0,
+   "exposure_pixday": 94553414.88925548,
+   "exposure_gday": 33.44732498292523,
+   "n_roi": 73020.0,
+   "rate_per_pixday": 0.0007722619017570521,
+   "rate_lo": 0.0007694039683104174,
+   "rate_hi": 0.0007751304311141898,
+   "rate_per_gday": 2183.1342278426305,
+   "dispersion_index": 13.609289144526613
+  },
+  "test": {
+   "n_quadrant_images": 260.0,
+   "exposure_pixday": 40434138.49678981,
+   "exposure_gday": 14.303172151854428,
+   "n_roi": 34091.0,
+   "rate_per_pixday": 0.000843124183360716,
+   "rate_lo": 0.0008385577308225144,
+   "rate_hi": 0.0008477154351770669,
+   "rate_per_gday": 2383.4572945121163,
+   "dispersion_index": 2.8845076413129567
+  },
+  "all": {
+   "n_quadrant_images": 868.0,
+   "exposure_pixday": 134987553.38604528,
+   "exposure_gday": 47.75049713477966,
+   "n_roi": 107111.0,
+   "rate_per_pixday": 0.0007934879721367919,
+   "rate_lo": 0.0007910634171061206,
+   "rate_hi": 0.0007959199467913391,
+   "rate_per_gday": 2243.138949897642,
+   "dispersion_index": 11.271355226163793
+  }
+ },
+ "pixel_mass_g": 3.5374e-07
+}

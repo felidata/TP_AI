@@ -1,0 +1,55 @@
+{
+ "test_f_exp": {
+  "value": 0.7307617228555555,
+  "statement": "retained exposure fraction on the held-out test block at the selected threshold",
+  "produced_by": "scripts/04_final.py::main (metrics.curve)",
+  "from_scratch": "exposure bookkeeping, threshold application",
+  "from_library": "numpy",
+  "choices": [
+   "threshold frozen from dev CV"
+  ]
+ },
+ "test_r_B": {
+  "value": 0.04576034811488654,
+  "statement": "4-7 e- rate after/before on the test block",
+  "produced_by": "scripts/04_final.py::main",
+  "from_scratch": "event counting at centroid pixel",
+  "from_library": "numpy",
+  "choices": [
+   "centroid-pixel assignment of clusters to masked/kept"
+  ]
+ },
+ "test_F_equal": {
+  "value": 15.969321759111086,
+  "statement": "f_exp / r_B on the test block",
+  "produced_by": "scripts/04_final.py::main",
+  "from_scratch": "ratio",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "test_r_B_boot": {
+  "value": [
+   0.04392291335950561,
+   0.04566661275298716,
+   0.04750733400967446
+  ],
+  "statement": "acquisition-bootstrap 16/50/84 percentiles of r_B",
+  "produced_by": "src/skbg/metrics.py::bootstrap",
+  "from_scratch": "bootstrap over acquisitions",
+  "from_library": "numpy.random",
+  "choices": [
+   "2000 resamples",
+   "acquisition as the resampling unit"
+  ]
+ },
+ "baseline_rate_all": {
+  "value": 0.0007934879721367919,
+  "statement": "4-7 e- rate, all usable data, no mask",
+  "produced_by": "scripts/02_baseline.py::main",
+  "from_scratch": "counting and exposure map",
+  "from_library": "numpy",
+  "choices": [
+   "no border or other mask in the baseline"
+  ]
+ }
+}

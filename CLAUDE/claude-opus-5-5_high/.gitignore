@@ -1,0 +1,6 @@
+cache/
+logs/
+*.fits
+*.fits.fz
+__pycache__/
+*.pyc

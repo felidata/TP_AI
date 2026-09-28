@@ -1,0 +1,13 @@
+# Development-set (img 22..97) 4-fold blocked cross-validation.
+# Each entry overrides keys of the default `model` spec (pipeline.default_feature_spec).
+# The selection criterion is fixed before running (see METHOD.md, "Model selection"):
+#   S = mean over f_exp in {0.80,0.82,...,0.99} of log r_B (pooled out-of-fold); lower is better.
+configs:
+  glm_full:            {}
+  glm_static_only:     {use_dynamic: false, use_onee: false}
+  glm_dynamic_only:    {use_static: false}
+  glm_intercept_only:  {use_static: false, use_dynamic: false, use_onee: false}
+  glm_sideband_only:   {static_source: side, target: side}
+  glm_static_roi_side: {static_source: roi+side}
+  glm_hee20:           {hee_min_e: 20}
+  glm_l2_100:          {l2: 100.0}

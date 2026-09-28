@@ -1,0 +1,30 @@
+{
+ "selected_config": "glm_hee20",
+ "rule": "Stage 3b: summarise the dev cross-validation and fix the model + operating point.\n\nPre-declared rules (written before the CV results were seen):\n  model:  minimise S = mean_{f in 0.80..0.99 step 0.01} log r_B(f)  (pooled out-of-fold, dev only)\n          among the supervised intensity models (glm_*, hgb_*); iforest/intercept-only are comparators.\n  point:  among thresholds with f_exp >= 0.5, F_max = max F_equal; choose the largest f_exp with\n          F_equal >= 0.95 F_max. The threshold is stored as an absolute predicted rate density\n          (log events / pixel-day) and applied unchanged to the held-out test block.",
+ "cv_row": {
+  "config": "glm_hee20",
+  "S_mean_log_rB_80_99": -2.50887383250858,
+  "F_max": 14.980975844875385,
+  "sel_f_exp": 0.7258117381125996,
+  "sel_r_B": 0.05090683880634019,
+  "sel_F": 14.257647010330631,
+  "sel_log_rate_threshold": -8.91,
+  "sel_r_B_lo": 0.04929708047809783,
+  "sel_r_B_hi": 0.0524379868867101,
+  "r_B@0.9": 0.07845318608753711,
+  "r_B@0.9_lo": 0.07663431058666469,
+  "r_B@0.9_hi": 0.08028218669090567,
+  "r_B@0.95": 0.09798549115579103,
+  "r_B@0.95_lo": 0.0957441879566937,
+  "r_B@0.95_hi": 0.0999445864766168,
+  "r_B@0.99": 0.15472102348167552,
+  "r_B@0.99_lo": 0.15235022773388876,
+  "r_B@0.99_hi": 0.15716792126570853,
+  "r_B@0.90_per_fold": [
+   0.0799370959510322,
+   0.07319722237832804,
+   0.07990945264413013,
+   0.08012420880768927
+  ]
+ }
+}

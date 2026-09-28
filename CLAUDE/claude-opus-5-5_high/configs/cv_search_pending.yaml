@@ -1,0 +1,7 @@
+# NOT RUN TO COMPLETION in this session (stopped at the user's request; see README "Pending work").
+# Same harness and covariates as glm_full. Run with:
+#   python scripts/03_cv_search.py --search configs/cv_search_pending.yaml
+# Cost measured here: ~18 min per fold for hgb_full on 4 workers (6.7 GB RAM machine).
+configs:
+  hgb_full:            {model_type: hgb}
+  iforest_full:        {model_type: iforest}

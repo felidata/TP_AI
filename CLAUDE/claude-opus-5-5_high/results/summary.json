@@ -1,0 +1,178 @@
+{
+ "agent": "CLAUDE",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "run_id": "claude-opus-5-5_high",
+ "method_name": "Cross-fitted log-linear Poisson point-process model of the 4-7 e- rate density (static multiscale rate maps from other acquisitions + same-image high-energy-trail and single-electron covariates); mask = pixels with predicted rate above a threshold",
+ "selected_config": "glm_hee20",
+ "data_files": {
+  "n_files": 218,
+  "n_usable": 217,
+  "excluded": [
+   "pp_proc_skp_modS99_Vv3_bkgd_CLEAR60_NSAMP256_NROW515_NCOL3200_EXPOSURE0_NBINROW1_NBINCOL1_img114.fits"
+  ],
+  "manifest": "data/manifest.csv",
+  "pattern": "pp_proc_skp_mod*_img*.fits"
+ },
+ "split_strategy": "Acquisition-level split (both modules and all 4 HDUs of an image number stay together). Development: acquisitions 22-97 (76), 4 contiguous chronological folds for cross-validation, model/feature/threshold selection; static maps cross-fitted so no image contributes to its own covariates. Held-out test: acquisitions 98-130 (33 acquisitions, 65 files after the quality cut), evaluated once with the frozen model and threshold.",
+ "evaluation_set": "held-out test block",
+ "units": {
+  "exposure": "pixel-day (1 pixel-day = 3.5374e-07 g-day)",
+  "rate": "4-7 e- clusters per pixel-day"
+ },
+ "baseline_exposure": 40434138.496789806,
+ "baseline_exposure_gday": 14.303172151854426,
+ "retained_exposure": 29547720.710094262,
+ "retained_exposure_gday": 10.452210723988744,
+ "exposure_fraction": 0.7307617228555555,
+ "baseline_roi_events": 34091,
+ "final_roi_events": 1140,
+ "baseline_roi_background_rate": 0.0008431241833607162,
+ "final_roi_background_rate": 3.85816561346658e-05,
+ "background_ratio": 0.04576034811488654,
+ "F_equal": 15.969321759111086,
+ "uncertainties_bootstrap_acquisitions_16_50_84": {
+  "f_exp": [
+   0.730198253531824,
+   0.7307821555476237,
+   0.7313590543915622
+  ],
+  "r_B": [
+   0.04392291335950561,
+   0.04566661275298716,
+   0.04750733400967446
+  ],
+  "F_equal": [
+   15.381495259192485,
+   16.00088470044961,
+   16.629035996771307
+  ]
+ },
+ "significance_gain_background_dominated": 3.9961633799321925,
+ "selected_hyperparameters": {
+  "spec": {
+   "static_source": "roi",
+   "static_windows": [
+    "p1",
+    "sq5",
+    "sq17",
+    "sq65",
+    "sq257",
+    "col65",
+    "col513",
+    "row65"
+   ],
+   "pseudo_count": 1.0,
+   "use_static": true,
+   "use_dynamic": true,
+   "use_onee": true,
+   "hee_min_e": 20,
+   "target": "roi",
+   "n_dummy": 3000,
+   "l2": 1.0,
+   "model_type": "glm",
+   "control_threshold": -8.91
+  },
+  "log_rate_threshold": -8.91,
+  "rate_threshold_per_pixday": 0.00013503183398874292,
+  "selection_rule": "Stage 3b: summarise the dev cross-validation and fix the model + operating point.\n\nPre-declared rules (written before the CV results were seen):\n  model:  minimise S = mean_{f in 0.80..0.99 step 0.01} log r_B(f)  (pooled out-of-fold, dev only)\n          among the supervised intensity models (glm_*, hgb_*); iforest/intercept-only are comparators.\n  point:  among thresholds with f_exp >= 0.5, F_max = max F_equal; choose the largest f_exp with\n          F_equal >= 0.95 F_max. The threshold is stored as an absolute predicted rate density\n          (log events / pixel-day) and applied unchanged to the held-out test block."
+ },
+ "dev_cv_at_selected_threshold": {
+  "sel_f_exp": 0.7258117381125996,
+  "sel_r_B": 0.05090683880634019,
+  "sel_F": 14.257647010330631,
+  "sel_r_B_lo": 0.04929708047809783,
+  "sel_r_B_hi": 0.0524379868867101
+ },
+ "whole_dataset_baseline": {
+  "n_quadrant_images": 868.0,
+  "exposure_pixday": 134987553.38604528,
+  "exposure_gday": 47.75049713477966,
+  "n_roi": 107111.0,
+  "rate_per_pixday": 0.0007934879721367919,
+  "rate_lo": 0.0007910634171061206,
+  "rate_hi": 0.0007959199467913391,
+  "rate_per_gday": 2243.138949897642,
+  "dispersion_index": 11.271355226163793
+ },
+ "sanity_checks": {
+  "leakage_invariance": {
+   "images": [
+    105,
+    120,
+    128
+   ],
+   "roi_clusters_removed": 3083,
+   "max_abs_score_change": 0.0
+  },
+  "area_controls": {
+   "method": {
+    "f_exp": 0.7307617228555547,
+    "r_B": 0.045760348114886586
+   },
+   "shifted_mask": {
+    "f_exp": 0.7309166302164761,
+    "r_B": 1.0386601483006621
+   },
+   "random_mask_same_f": {
+    "f_exp": 0.7310110861500462,
+    "r_B": 1.0036556089844766
+   }
+  },
+  "leave_one_acquisition_out": {
+   "r_B_min": 0.04512785721858291,
+   "r_B_max": 0.04643713975061096,
+   "F_min": 15.7373000866511,
+   "F_max": 16.190508811074118,
+   "most_influential_img": 114
+  },
+  "without_S101_HDU0": {
+   "same_threshold": {
+    "f_exp": 0.7268427379945241,
+    "r_B": 0.13419621323743805,
+    "F_equal": 5.416268614886293
+   },
+   "curve_r_B_at_f": {
+    "0.8": 0.15412092658011,
+    "0.9": 0.2101290598918597,
+    "0.95": 0.2580277200959436,
+    "0.99": 0.3297213698884683
+   }
+  },
+  "charge_windows_same_mask": {
+   "1-1": {
+    "N_before": 1880509,
+    "N_after": 1078264,
+    "r_B": 0.7846462407334039
+   },
+   "2-3": {
+    "N_before": 146771,
+    "N_after": 43898,
+    "r_B": 0.409287696771858
+   },
+   "4-7": {
+    "N_before": 34091,
+    "N_after": 1140,
+    "r_B": 0.04576034811488658
+   },
+   "8-20": {
+    "N_before": 15703,
+    "N_after": 422,
+    "r_B": 0.03677511413288446
+   },
+   "21-62": {
+    "N_before": 4421,
+    "N_after": 175,
+    "r_B": 0.054167868035592634
+   }
+  }
+ },
+ "random_seed": 20260927,
+ "runtime_if_available": {
+  "final_stage_s": 291.1362724304199
+ },
+ "git_commit": "eb2fee34f7fd9033e01b1d965ddf17b95b34326f",
+ "git_branch": "codex/gpt-6-astra_high",
+ "git_dirty_at_run": true,
+ "notes": "ROI = 8-connected clusters with integer total charge 4..7 e- (pixel charge floor(q+0.5)); a cluster is kept if its charge-weighted centroid pixel is unmasked. Exposure per pixel from the continuous-readout time map. The test block baseline differs from the whole-dataset baseline (see whole_dataset_baseline). S101 HDU0 carries ~73% of baseline 4-7 e- clusters; see sanity_checks.without_S101_HDU0. git_commit is the commit checked out when this summary was generated (the code commit); results are committed in a following commit."
+}
