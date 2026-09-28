@@ -169,10 +169,12 @@
  },
  "random_seed": 20260927,
  "runtime_if_available": {
-  "final_stage_s": 291.1362724304199
+  "total_wall_s": 431,
+  "workers": 4,
+  "skip_cv": "1"
  },
- "git_commit": "eb2fee34f7fd9033e01b1d965ddf17b95b34326f",
- "git_branch": "codex/gpt-6-astra_high",
+ "git_commit": "b10232b0f788131abbe096484b96bc65cde9b2b9",
+ "git_branch": "claude/claude-opus-5-5_high",
  "git_dirty_at_run": true,
  "notes": "ROI = 8-connected clusters with integer total charge 4..7 e- (pixel charge floor(q+0.5)); a cluster is kept if its charge-weighted centroid pixel is unmasked. Exposure per pixel from the continuous-readout time map. The test block baseline differs from the whole-dataset baseline (see whole_dataset_baseline). S101 HDU0 carries ~73% of baseline 4-7 e- clusters; see sanity_checks.without_S101_HDU0. git_commit is the commit checked out when this summary was generated (the code commit); results are committed in a following commit."
 }
